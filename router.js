@@ -1,4 +1,5 @@
 var moment = require('moment');
+
 function enrutar(ruta, request, respuesta){
 	console.log("Rutear a " + ruta + " a las " + moment().format() + "\n");
 	if(typeof request[ruta] === "function"){
